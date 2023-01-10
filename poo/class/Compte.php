@@ -53,4 +53,20 @@ class Compte {
     public function voirSolde() {
         return "le solde du compte est de $this->solde euros ";
     }
+
+    /**
+     * retire un montant du solde du compte
+     *
+     * @param float $montant à retirer
+     * @return void
+     */
+    public function retirer(float $montant) 
+    {
+        // on verifie le montant et le sodle
+        if($montant > 0 && $this->solde >= $montant)  {
+            $this->solde -= $montant;
+        }else{
+            echo "montant invalide ou solde insuffisant";
+        }
+    }
 }

@@ -7,12 +7,11 @@ $compte1 = new Compte('sarah', 500);
 // $compte1->titulaire = "sarah";
 // on ecrit dans la propriété solde
 // $compte1-> solde = 500;
+var_dump($compte1);
 
 // on dépose 100 euros
 $compte1->deposer(100);
-
-
-var_dump($compte1);
+$compte1->retirer(-100);
 
 ?>
 
