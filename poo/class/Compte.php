@@ -44,4 +44,13 @@ class Compte {
             $this->solde += $montant;
         }
     }
+   
+    /**
+     * return une chaine de caractère affichant le solde
+     *
+     * @return string
+     */
+    public function voirSolde() {
+        return "le solde du compte est de $this->solde euros ";
+    }
 }

@@ -14,8 +14,12 @@ $compte1->deposer(100);
 
 var_dump($compte1);
 
-$compte2 = new Compte('lulu');
-// $compte2->titulaire = "lulu";
-$compte2->solde = 352.25;
+?>
 
- var_dump($compte2);
+<p><?= $compte1->voirSolde() ?></p>
+<?php
+// $compte2 = new Compte('lulu');
+// $compte2->titulaire = "lulu";
+// $compte2->solde = 352.25;
+
+// var_dump($compte2);
