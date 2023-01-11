@@ -1,6 +1,7 @@
 <?php
 require_once 'class/Compte.php';
 require_once('./class/Cart.php');
+require_once('./class/Payment.php');
 
 // // on instancie le compte
 // $compte1 = new Compte('sarah', 500);
@@ -22,7 +23,9 @@ require_once('./class/Cart.php');
 
 // ------------------ CART------------------------ //
 
-$cart = new Cart(0, 100);
-$cart->discount(5);
+// $cart = new Cart(0, 100);
+// $cart->discount(5);
 
- var_dump($cart->getTotalPrice());
+//  var_dump($cart->getTotalPrice());
+
+//--------------------Payment---------------------- //
