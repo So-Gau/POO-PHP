@@ -22,5 +22,7 @@ require_once('./class/Cart.php');
 
 // ------------------ CART------------------------ //
 
-$cart = new Cart();
- var_dump($cart);
+$cart = new Cart(0, 100);
+$cart->discount(5);
+
+ var_dump($cart->getTotalPrice());
